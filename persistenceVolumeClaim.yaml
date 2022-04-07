@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistenceVolumeClaim
+metadata:
+  name: pvc-nfs-pv1
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteMany
+  resources:  
+    requests:
+      storage: 200Mi
